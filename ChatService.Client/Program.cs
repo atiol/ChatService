@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatService.Server
+namespace ChatService.Client
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Title = "Server";
+            Console.Title = "Client";
 
-            Library.Server.Run();
-            Console.ReadLine();
+            Library.Client.StartClient();
+            Console.Read();
         }
     }
 }
